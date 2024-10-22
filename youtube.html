@@ -2,9 +2,16 @@
 <html>
     <head>
         <title>Youtube Clone</title>
-        <link rel="stylesheet" href="styles/video.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/sidebar.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="sidebar.css">
+        <link rel="stylesheet" href="video.css">
+
     </head>
     <body>
         <header class="header">
@@ -18,11 +25,11 @@
                     <img class="search" src="/public/search.svg">
                     <div class="tooltip">Search</div>
                 </button>
+                <!-- Put position absolute inside position relative -->
                 <button class="voice-search">
                     <img class="voice" src="/public/voice-search-icon.svg">
                     <div class="tooltip">Search with your voice</div>
                 </button>
-                
             </div>
             <div class="right-section">
                 <div class="upload-icon-container">
@@ -34,10 +41,10 @@
                     <img class="notifications" src="/public/notifications.svg">
                     <div class="notification-no">3</div>
                 </div>
-                
-                <img class="channel" src="/public/my-channel.jpeg">
+                <img class="channel" src="/public/my-channel.png">
             </div>
         </header>
+
         <nav class="sidebar">
             <div class="sidebar-link">
                 <img src="/public/home.svg">
@@ -64,12 +71,12 @@
                 <div>Library</div>
             </div>
         </nav>
+        
         <main>
-            <section class="grid">
-                <div class="Video-preview">
+            <section class="video-grid">
+                <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="/public/thumbnail-1.webp"
-                        />
+                        <img class="thumbnail" src="/public/thumbnail-1.webp">
                         <div class="video-time">14:20</div>
                     </div> 
                     <div class="video-info-grid">
@@ -89,10 +96,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="Video-preview">
+
+                <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="/public/thumbnail-2.webp"
-                        />
+                        <img class="thumbnail" src="/public/thumbnail-2.webp">
                         <div class="video-time">8:22</div>
                     </div>
                     <div class="video-info-grid">
@@ -112,10 +119,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="Video-preview">
+
+                <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="/public/thumbnail-3.webp"
-                        />
+                        <img class="thumbnail" src="/public/thumbnail-3.webp">
                         <div class="video-time">9:13</div>
                     </div> 
                     <div class="video-info-grid">
@@ -135,10 +142,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="Video-preview">
+
+                <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="/public/thumbnail-4.webp"
-                        />
+                        <img class="thumbnail" src="/public/thumbnail-4.webp">
                         <div class="video-time">22:09</div>
                     </div>
                     <div class="video-info-grid">
@@ -158,10 +165,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="Video-preview">
+
+                <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="/public/thumbnail-5.webp"
-                        />
+                        <img class="thumbnail" src="/public/thumbnail-5.webp">
                         <div class="video-time">11:17</div>
                     </div> 
                     <div class="video-info-grid">
@@ -181,10 +188,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="Video-preview">
+
+                <div class="video-preview">
                     <div class="thumbnail-row">
-                        <img class="thumbnail" src="/public/thumbnail-6.webp"
-                        />
+                        <img class="thumbnail" src="/public/thumbnail-6.webp">
                         <div class="video-time">19:59</div>
                     </div>
                     <div class="video-info-grid">
@@ -199,7 +206,145 @@
                                 MrBeast
                             </p>
                             <p class="video-stats">
-                                141 views &#183 1 years ago
+                                141 views &#183 1 year ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/public/thumbnail-7.webp">
+                        <div class="video-time">10:13</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="channel-profile" src="/public/channel-7.jpeg">
+                        </div>
+                        <div class="info">
+                            <p class="video-title">
+                                Why Planes Don't Fly Over Tibet
+                            </p>
+                            <p class="channel">
+                                RealLifeLore
+                            </p>
+                            <p class="video-stats">
+                                6.6M views &#183 1 year ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/public/thumbnail-8.webp">
+                        <div class="video-time">7:12</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="channel-profile" src="/public/channel-8.jpeg">
+                        </div>
+                        <div class="info">
+                            <p class="video-title">
+                                Inside The World's Biggest Passenger Plane
+                            </p>
+                            <p class="channel">
+                                Tech Vision
+                            </p>
+                            <p class="video-stats">
+                                3.7M views &#183 10 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/public/thumbnail-9.webp">
+                        <div class="video-time">13:17</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="channel-profile" src="/public/channel-9.jpeg">
+                        </div>
+                        <div class="info">
+                            <p class="video-title">
+                                The SECRET to Super Human STRENGTH
+                            </p>
+                            <p class="channel">
+                                ThenX
+                            </p>
+                            <p class="video-stats">
+                                20M views &#183 3 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/public/thumbnail-10.webp">
+                        <div class="video-time">7:53</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="channel-profile" src="/public/channel-10.jpeg">
+                        </div>
+                        <div class="info">
+                            <p class="video-title">
+                                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                            </p>
+                            <p class="channel">
+                                Business Insider
+                            </p>
+                            <p class="video-stats">
+                                14M views &#183 1 year ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/public/thumbnail-11.webp">
+                        <div class="video-time">4:10</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="channel-profile" src="/public/channel-11.jpeg">
+                        </div>
+                        <div class="info">
+                            <p class="video-title">
+                                Dubai's Crazy underwater Train and Other Things #Only in Dubai
+                            </p>
+                            <p class="channel">
+                                Destination Tips
+                            </p>
+                            <p class="video-stats">
+                                3M views &#183 8 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="/public/thumbnail-12.webp">
+                        <div class="video-time">4:51</div>
+                    </div> 
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="channel-profile" src="/public/channel-12.jpeg">
+                        </div>
+                        <div class="info">
+                            <p class="video-title">
+                                What would happen if you didn't drink water? - Mia Nacamulli
+                            </p>
+                            <p class="channel">
+                                TED-Ed
+                            </p>
+                            <p class="video-stats">
+                                12M views &#183 5 years ago
                             </p>
                         </div>
                     </div>
