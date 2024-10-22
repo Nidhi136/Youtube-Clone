@@ -8,6 +8,7 @@
     z-index: 200;
     padding-top: 5px;
 }
+
 .sidebar-link {
     height: 74px;
     display: flex;
@@ -27,7 +28,8 @@
 }
   
 .sidebar-link div {
-    font-family: Roboto, Arial;
     font-size: 10px;
 }
+
+
 
