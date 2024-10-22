@@ -1,80 +1,82 @@
-body{
-    margin: 0;
-    padding-top: 80px;
-    padding-left: 96px;
-    padding-right: 24px;
-    background-color: rgb(239, 233, 233);
-}.grid{
+.thumbnail{
+    width: 100%;
+}
+
+.video-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.channel-profile{
+    width: 36px;
+    border-radius: 50px;
+}
+
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.channel, 
+.video-stats{
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.channel{
+    margin-bottom: 4px;
+}
+
+.video-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
 }
+
 @media (max-width: 750px){
     .video-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width: 751px) and (max-width:999px)
-{
+
+@media (min-width: 751px) and (max-width:999px){
     .video-grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 @media (min-width: 1000px){
     .video-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-.Video-preview{
-    font-family: Roboto, Arial, sans-serif;
-    
-}
+
 .video-time{
-    font-family: Roboto, Arial, sans-serif;
     background-color: black;
     font-size: 14px;
     font-weight: 500px;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 8px;
+    right: 5px;
     padding: 4px;
     border-radius: 4px;
     color: white;
 }
 
-.thumbnail{
-    width: 100%;
-}
-.video-info-grid{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-}
-.channel, .video-stats{
-    color: #6c757d;
-    font-size: 13px;
-    margin-bottom: 3px;
-    margin-top: 2px;
-}
-.info{
-    width: 245px;
-}
-.channel-picture{
-    width: 50px;
-    vertical-align: top;
-}
-.channel-profile{
-    width: 36px;
-    border-radius: 50px;
-}
-.video-title{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 0px;
-    line-height: 18px;
-    margin-bottom: 10px;
-}
-.thumbnail-row{
-    margin-bottom: 8px;
-    position: relative;
-}
+
+
+
+
+
+
+
+
